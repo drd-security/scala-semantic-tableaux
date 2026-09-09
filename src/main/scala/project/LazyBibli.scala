@@ -58,7 +58,7 @@ object LazyBibli {
     val t = lazysemtab(s)
     val variables = s.flatMap(allVariables)
 
-    // Use openLeavesLazyList to retrieve the open leaves
+    // Utilise la méthode openLeavesLazyList pour récupérer les feuilles ouvertes
     t.openLeavesLazyList.flatMap(fs => createModel(fs, variables)).toSet
 
   /** Generate counterexamples for a formula under a given set of hypotheses.

@@ -15,7 +15,7 @@ import project.EliminationRule.FormulaToEliminate
 
 object TableauVisualizer:
 
-  // ----- PRETTY PRINT FOR FORMULAS -----
+  // ----- PRETTY PRINT Pour les formules -----
 
   private def prettyFormula(f: Formula): String =
     def wrap(phi: Formula): String = phi match
